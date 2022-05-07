@@ -4,19 +4,19 @@ const fs = require("fs");
 const path = require("path");
 
 const addFolders = () => {
-  fs.existsSync(path.join(`${__dirname}/src`, "components"), (exists) => {
+  fs.exists(path.join(`${__dirname}/src`, "components"), (exists) => {
     exists
       ? console.log("The directory (components) already exists")
       : fs.mkdirSync(path.join(`${__dirname}/src`, "components"));
   });
 
-  fs.existsSync(path.join(`${__dirname}/src`, "assets"), (exists) => {
+  fs.exists(path.join(`${__dirname}/src`, "assets"), (exists) => {
     exists
       ? console.log("he directory (assets) already exists")
       : fs.mkdirSync(path.join(`${__dirname}/src`, "assets"));
   });
 
-  fs.existsSync(path.join(`${__dirname}/src`, "pages"), (exists) => {
+  fs.exists(path.join(`${__dirname}/src`, "pages"), (exists) => {
     exists
       ? console.log("The directory (pages) already exists")
       : fs.mkdirSync(path.join(`${__dirname}/src`, "pages"));
