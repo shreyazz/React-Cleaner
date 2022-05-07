@@ -1,6 +1,6 @@
 {
   "name": "@shreyazz/react-cleaner",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "A npx command which helps you delete all the unnecessary files and add the necessary folders to your react-app.",
   "bin": "./bin.js",
   "scripts": {
